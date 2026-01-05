@@ -775,7 +775,7 @@ function ExperiencePage() {
             <div className="promo-price">
               <span className="old-price">❌ $625</span>
               <span className="arrow">→</span>
-              <span className="new-price">✅ $500</span>
+              <span className="new-price">✓ $500</span>
             </div>
             <p>Timpro AI Asistan'ı hemen edinin</p>
             
