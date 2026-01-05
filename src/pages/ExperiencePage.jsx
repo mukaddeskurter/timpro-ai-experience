@@ -772,6 +772,11 @@ function ExperiencePage() {
             <div className="promo-icon">🎉</div>
             <h2>Etkinliğe Özel Fırsat!</h2>
             <div className="promo-discount">%20 İndirim</div>
+            <div className="promo-price">
+              <span className="old-price">$625</span>
+              <span className="arrow">→</span>
+              <span className="new-price">$500</span>
+            </div>
             <p>Timpro AI Asistan'ı hemen edinin</p>
             
             <div className="promo-code-section">

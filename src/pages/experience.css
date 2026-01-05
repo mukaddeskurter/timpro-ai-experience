@@ -1872,9 +1872,37 @@
   font-weight: 900;
   padding: 24px;
   border-radius: 16px;
-  margin: 24px 0;
+  margin: 24px 0 16px 0;
   box-shadow: 0 12px 24px rgba(255, 215, 0, 0.4);
   animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.promo-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0 24px 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 24px;
+}
+
+.arrow {
+  color: #0066ff;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.new-price {
+  color: #0066ff;
+  font-size: 36px;
+  font-weight: 900;
 }
 
 .promo-popup p {
