@@ -218,7 +218,7 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background: linear-gradient(135deg, #0f3d2e 0%, #145a43 100%);
+  background: linear-gradient(135deg, #001a33 0%, #003d7a 100%);
   color: white;
   border: none;
   padding: 12px 24px;
@@ -227,12 +227,12 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(15, 61, 46, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 26, 51, 0.3);
 }
 
 .edit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(15, 61, 46, 0.4);
+  box-shadow: 0 6px 16px rgba(0, 61, 122, 0.4);
 }
 
 .scroll-hint {
