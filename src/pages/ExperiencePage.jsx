@@ -676,7 +676,7 @@ function ExperiencePage() {
 
       <section className="features-intro">
         <h2 className="features-title">Daha Fazla Yetenek</h2>
-        <p className="features-subtitle">Her gününüzü kolaylaştıran 7 farklı kategori</p>
+        <p className="features-subtitle">Her gününüzü kolaylaştıran 8 farklı kategori</p>
       </section>
 
       <section className="features-grid">
