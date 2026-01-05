@@ -49,6 +49,25 @@
   font-weight: 300;
 }
 
+.hero-logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 24px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  animation: fadeInDown 0.8s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .promo-badge {
   background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
   color: #0f3d2e;
