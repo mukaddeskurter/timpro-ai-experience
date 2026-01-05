@@ -8,6 +8,15 @@ function ExperiencePage() {
   const [demoState, setDemoState] = useState({});
   const [isProcessing, setIsProcessing] = useState(false);
   const [isPromoVisible, setIsPromoVisible] = useState(true);
+  const [isCopied, setIsCopied] = useState(false);
+
+  const promoCode = "ETKINLIK2026";
+
+  const handleCopyCode = () => {
+    navigator.clipboard.writeText(promoCode);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000);
+  };
 
   const handleProcess = (type) => {
     setIsProcessing(true);
@@ -764,6 +773,17 @@ function ExperiencePage() {
             <h2>Etkinliğe Özel Fırsat!</h2>
             <div className="promo-discount">%20 İndirim</div>
             <p>Timpro AI Asistan'ı hemen edinin</p>
+            
+            <div className="promo-code-section">
+              <label>İndirim Kupon Kodu:</label>
+              <div className="promo-code-box">
+                <span className="promo-code-text">{promoCode}</span>
+                <button className="copy-code-btn" onClick={handleCopyCode}>
+                  {isCopied ? '✓ Kopyalandı' : '📋 Kopyala'}
+                </button>
+              </div>
+            </div>
+
             <a href="mailto:bilgi@turevbilgisistemleri.com.tr?subject=Etkinlik İndirimi Hakkında Bilgi" className="promo-cta">
               Hemen İletişime Geçin
             </a>
