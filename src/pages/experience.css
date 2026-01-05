@@ -49,6 +49,30 @@
   font-weight: 300;
 }
 
+.promo-badge {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #0f3d2e;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 24px;
+  display: inline-block;
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.4);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 16px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(255, 215, 0, 0.6);
+  }
+}
+
 .cv-section {
   display: flex;
   justify-content: center;

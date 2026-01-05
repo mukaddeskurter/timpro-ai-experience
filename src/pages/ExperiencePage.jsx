@@ -568,6 +568,9 @@ function ExperiencePage() {
           <h1>Merhaba.</h1>
           <h2>Dijital sağ kolunuz.</h2>
           <p className="hero-micro">Profesyonellik. Standart.</p>
+          <div className="promo-badge">
+            🎉 Etkinliğe Özel %20 İndirim Kodu
+          </div>
         </div>
 
         <video
