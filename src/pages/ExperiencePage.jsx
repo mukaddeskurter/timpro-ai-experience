@@ -7,6 +7,8 @@ function ExperiencePage() {
   const [activeDemo, setActiveDemo] = useState(null);
   const [demoState, setDemoState] = useState({});
   const [isProcessing, setIsProcessing] = useState(false);
+  const [isPromoVisible, setIsPromoVisible] = useState(true);
+  const [isPromoVisible, setIsPromoVisible] = useState(true);
 
   const handleProcess = (type) => {
     setIsProcessing(true);
@@ -568,9 +570,6 @@ function ExperiencePage() {
           <h1>Merhaba.</h1>
           <h2>Dijital sağ kolunuz.</h2>
           <p className="hero-micro">Profesyonellik. Standart.</p>
-          <div className="promo-badge">
-            🎉 Etkinliğe Özel %20 İndirim Kodu
-          </div>
         </div>
 
         <video
@@ -757,6 +756,21 @@ function ExperiencePage() {
           </a>
         </div>
       </section>
+
+      {isPromoVisible && (
+        <div className="promo-popup-overlay" onClick={() => setIsPromoVisible(false)}>
+          <div className="promo-popup" onClick={(e) => e.stopPropagation()}>
+            <button className="promo-close" onClick={() => setIsPromoVisible(false)}>×</button>
+            <div className="promo-icon">🎉</div>
+            <h2>Etkinliğe Özel Fırsat!</h2>
+            <div className="promo-discount">%20 İndirim</div>
+            <p>Timpro AI Asistan'ı hemen edinin</p>
+            <a href="mailto:bilgi@turevbilgisistemleri.com.tr?subject=Etkinlik İndirimi Hakkında Bilgi" className="promo-cta">
+              Hemen İletişime Geçin
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
