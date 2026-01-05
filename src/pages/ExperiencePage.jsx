@@ -573,9 +573,12 @@ function ExperiencePage() {
 
   return (
     <div className="experience">
+      <header className="page-header">
+        <img src="/timpro-logo.png" alt="Timpro AI" className="page-logo" />
+      </header>
+      
       <section className="hero">
         <div className="hero-overlay">
-          <img src="/timpro-logo.png" alt="Timpro AI" className="hero-logo" />
           <h1>Merhaba.</h1>
           <h2>Dijital sağ kolunuz.</h2>
           <p className="hero-micro">Profesyonellik. Standart.</p>

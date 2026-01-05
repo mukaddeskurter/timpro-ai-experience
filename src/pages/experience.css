@@ -5,6 +5,23 @@
   overflow-x: hidden;
 }
 
+.page-header {
+  background: white;
+  padding: 16px 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-logo {
+  max-height: 50px;
+  width: auto;
+}
+
 .hero {
   position: relative;
   height: 75vh;
@@ -47,25 +64,6 @@
   margin-top: 8px;
   opacity: 0.9;
   font-weight: 300;
-}
-
-.hero-logo {
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 24px;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-  animation: fadeInDown 0.8s ease;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .promo-badge {
