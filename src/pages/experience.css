@@ -2095,6 +2095,220 @@
   box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
 }
 
+/* Dark Mode Desteği - Tüm yazılar her modda okunabilir */
+@media (prefers-color-scheme: dark) {
+  .experience {
+    background: #1a1a1a;
+  }
+
+  .cv-card {
+    background: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  .cv-card h3 {
+    color: #ffffff;
+  }
+
+  .cv-card p {
+    color: #b0b0b0;
+  }
+
+  .mail-window {
+    background: #2a2a2a;
+  }
+
+  .mail-title {
+    color: #e0e0e0;
+  }
+
+  .mail-to,
+  .mail-subject {
+    color: #b0b0b0;
+    border-bottom: 1px solid #444;
+  }
+
+  .mail-subject {
+    color: #ffffff;
+  }
+
+  .mail-body-text {
+    color: #e0e0e0;
+  }
+
+  .section-title {
+    color: #ffffff;
+  }
+
+  .features-intro {
+    background: linear-gradient(to bottom, #1a1a1a, #222);
+  }
+
+  .features-title {
+    color: #ffffff;
+  }
+
+  .features-subtitle {
+    color: #b0b0b0;
+  }
+
+  .features-grid {
+    background: #222;
+  }
+
+  .feature-card {
+    background: #2a2a2a;
+  }
+
+  .feature-card h3 {
+    color: #ffffff;
+  }
+
+  .feature-desc {
+    color: #b0b0b0;
+  }
+
+  .demo-modal {
+    background: #2a2a2a;
+  }
+
+  .demo-modal h2,
+  .demo-modal h4 {
+    color: #ffffff;
+  }
+
+  .demo-text-input,
+  .demo-textarea {
+    background: #333;
+    color: #e0e0e0;
+    border-color: #555;
+  }
+
+  .demo-result {
+    background: #333;
+  }
+
+  .demo-result p,
+  .demo-result li {
+    color: #e0e0e0;
+  }
+
+  .meeting-summary,
+  .decision-alternatives,
+  .alternative-card {
+    background: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  .alternative-card h5 {
+    color: #ffffff;
+  }
+
+  .creative-idea strong {
+    color: #ffffff;
+  }
+
+  .creative-idea p {
+    color: #b0b0b0;
+  }
+
+  .excel-preview {
+    background: #2a2a2a;
+  }
+
+  .excel-table .cell {
+    background: #333;
+    color: #e0e0e0;
+    border-color: #555;
+  }
+
+  .travel-plan-compact,
+  .plan-item {
+    background: #2a2a2a;
+  }
+
+  .plan-details strong {
+    color: #ffffff;
+  }
+
+  .plan-details p {
+    color: #b0b0b0;
+  }
+
+  .calendar-event {
+    background: #2a2a2a;
+  }
+
+  .calendar-event p {
+    color: #e0e0e0;
+  }
+
+  .report-preview {
+    background: #2a2a2a;
+  }
+
+  .report-header h3,
+  .report-section h4 {
+    color: #ffffff;
+  }
+
+  .report-date,
+  .report-section p,
+  .report-list li {
+    color: #e0e0e0;
+  }
+
+  .promo-popup {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  }
+
+  .promo-popup h2 {
+    color: #ffffff;
+  }
+
+  .promo-popup p {
+    color: #b0b0b0;
+  }
+
+  .promo-code-section label {
+    color: #e0e0e0;
+  }
+
+  .tab {
+    background: #333;
+    color: #b0b0b0;
+  }
+
+  .tab.active {
+    background: #001a33;
+    color: #ffffff;
+  }
+
+  .template-select {
+    background: #333;
+    color: #e0e0e0;
+    border-color: #555;
+  }
+
+  .action-checkbox span {
+    color: #e0e0e0;
+  }
+
+  .conversion-stats .stat span,
+  .next-steps ol li {
+    color: #e0e0e0;
+  }
+
+  .formula-info code {
+    background: #1a1a1a;
+    color: #4caf50;
+  }
+
+  .report-stats span {
+    color: #b0b0b0;
+  }
+}
+
 @media (max-width: 768px) {
   .promo-popup {
     padding: 32px 24px;
