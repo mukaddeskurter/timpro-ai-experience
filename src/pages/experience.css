@@ -5,23 +5,6 @@
   overflow-x: hidden;
 }
 
-.page-header {
-  background: white;
-  padding: 16px 32px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page-logo {
-  max-height: 50px;
-  width: auto;
-}
-
 .hero {
   position: relative;
   height: 75vh;
@@ -145,6 +128,26 @@
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to bottom, #f6f7f8, #ffffff);
+}
+
+.section-logo {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fadeInDown 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .mail-window {
