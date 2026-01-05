@@ -490,6 +490,7 @@
   font-family: inherit;
   margin-bottom: 16px;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .demo-text-input:focus {
@@ -582,6 +583,7 @@
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .template-select:focus {
@@ -754,6 +756,7 @@
   font-family: inherit;
   margin-bottom: 16px;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .demo-input:focus,
