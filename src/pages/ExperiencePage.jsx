@@ -8,7 +8,6 @@ function ExperiencePage() {
   const [demoState, setDemoState] = useState({});
   const [isProcessing, setIsProcessing] = useState(false);
   const [isPromoVisible, setIsPromoVisible] = useState(true);
-  const [isPromoVisible, setIsPromoVisible] = useState(true);
 
   const handleProcess = (type) => {
     setIsProcessing(true);
