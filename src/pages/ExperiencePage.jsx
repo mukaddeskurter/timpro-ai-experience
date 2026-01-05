@@ -10,7 +10,7 @@ function ExperiencePage() {
   const [isPromoVisible, setIsPromoVisible] = useState(true);
   const [isCopied, setIsCopied] = useState(false);
 
-  const promoCode = "ETKINLIK2026";
+  const promoCode = "TIMPRO20";
 
   const handleCopyCode = () => {
     navigator.clipboard.writeText(promoCode);
