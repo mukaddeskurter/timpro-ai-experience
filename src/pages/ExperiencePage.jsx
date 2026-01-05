@@ -67,7 +67,7 @@ function ExperiencePage() {
       case 'report':
         return (
           <div className="demo-modal">
-            <h2>📊 Rapor ve Sunum Hazırlığı</h2>
+            <h2>📊 Rapor Hazırlama</h2>
             <div className="demo-input-area">
               <div className="input-tabs">
                 <span className="tab active">📝 Metin Girişi</span>
@@ -76,18 +76,18 @@ function ExperiencePage() {
               
               <textarea 
                 className="demo-textarea"
-                placeholder="Sunum içeriğinizi buraya yazın veya yapıştırın..."
+                placeholder="Rapor içeriğinizi buraya yazın veya yapıştırın..."
                 defaultValue="2024 yılında şirketimiz %35 büyüme kaydetti. Yeni ürünlerimiz piyasada çok iyi karşılandı. Müşteri memnuniyeti %92'ye ulaştı. Gelecek yıl için hedefimiz %40 büyüme ve 3 yeni pazara giriş. Ekip büyüklüğümüzü 50 kişiden 75 kişiye çıkarmayı planlıyoruz."
                 readOnly
               />
 
               <div className="template-selector">
-                <label>📐 Sunum Şablonu:</label>
+                <label>📐 Rapor Şablonu:</label>
                 <select className="template-select">
                   <option>Kurumsal - Profesyonel</option>
                   <option>Modern - Minimalist</option>
-                  <option>Yaratıcı - Renkli</option>
-                  <option>Klasik - Zarif</option>
+                  <option>Detaylı - Akademik</option>
+                  <option>Özet - Yönetici Raporu</option>
                 </select>
               </div>
 
@@ -96,49 +96,54 @@ function ExperiencePage() {
                 onClick={() => handleProcess('report')}
                 disabled={isProcessing}
               >
-                {isProcessing ? 'PowerPoint Oluşturuluyor...' : 'Sunum Oluştur'}
+                {isProcessing ? 'Rapor Oluşturuluyor...' : 'Rapor Oluştur'}
               </button>
             </div>
             {demoState.report === 'completed' && (
               <div className="demo-result">
-                <h4>✅ PowerPoint Sunumu Hazır</h4>
-                <div className="presentation-preview">
-                  <div className="slide-preview">
-                    <div className="slide-number">Slayt 1</div>
-                    <div className="slide-content">
-                      <h3>2024 Yıl Sonu Başarılarımız</h3>
-                      <p className="slide-subtitle">Büyüme ve Gelişim Raporu</p>
-                    </div>
+                <h4>✅ Rapor Hazır</h4>
+                <div className="report-preview">
+                  <div className="report-header">
+                    <h3>2024 Yıl Sonu Performans Raporu</h3>
+                    <p className="report-date">Rapor Tarihi: 5 Ocak 2026</p>
                   </div>
-                  <div className="slide-preview">
-                    <div className="slide-number">Slayt 2</div>
-                    <div className="slide-content">
-                      <h4>Temel Başarılar</h4>
-                      <ul className="slide-bullets">
-                        <li>📈 %35 Yıllık Büyüme</li>
-                        <li>⭐ %92 Müşteri Memnuniyeti</li>
-                        <li>🚀 Yeni Ürün Lansmanı</li>
-                      </ul>
-                    </div>
+                  
+                  <div className="report-section">
+                    <h4>📈 Yönetici Özeti</h4>
+                    <p>2024 yılı şirketimiz için başarılı bir dönem olmuştur. %35 büyüme oranıyla hedeflerimizi aşan bir performans sergiledik. Yeni ürün lansmanlarımız pazar tarafından olumlu karşılanmış ve müşteri memnuniyeti %92 seviyesine ulaşmıştır.</p>
                   </div>
-                  <div className="slide-preview">
-                    <div className="slide-number">Slayt 3</div>
-                    <div className="slide-content">
-                      <h4>2025 Hedeflerimiz</h4>
-                      <ul className="slide-bullets">
-                        <li>🎯 %40 Büyüme Hedefi</li>
-                        <li>🌍 3 Yeni Pazar Girişi</li>
-                        <li>👥 75 Kişilik Ekip</li>
-                      </ul>
-                    </div>
+
+                  <div className="report-section">
+                    <h4>🎯 Başlıca Başarılar</h4>
+                    <ul className="report-list">
+                      <li><strong>Büyüme Oranı:</strong> %35 yıllık artış</li>
+                      <li><strong>Müşteri Memnuniyeti:</strong> %92 (hedef: %85)</li>
+                      <li><strong>Yeni Ürünler:</strong> Piyasada güçlü kabul gördü</li>
+                      <li><strong>Pazar Payı:</strong> Önemli artış kaydedildi</li>
+                    </ul>
+                  </div>
+
+                  <div className="report-section">
+                    <h4>🚀 2025 Hedefleri ve Stratejiler</h4>
+                    <ul className="report-list">
+                      <li><strong>Büyüme Hedefi:</strong> %40 yıllık büyüme</li>
+                      <li><strong>Pazar Genişlemesi:</strong> 3 yeni pazara giriş</li>
+                      <li><strong>Kapasite Artırımı:</strong> Ekip büyüklüğü 50'den 75 kişiye çıkarılacak</li>
+                      <li><strong>Yatırım Alanları:</strong> AR-GE ve dijital dönüşüm</li>
+                    </ul>
+                  </div>
+
+                  <div className="report-section">
+                    <h4>📊 Sonuç ve Öneriler</h4>
+                    <p>Mevcut momentum sürdürülerek 2025 yılında daha agresif büyüme hedefleri belirlenmiştir. Ekip genişlemesi ve yeni pazarlara giriş stratejileri öncelikli çalışma alanlarımızdır.</p>
                   </div>
                 </div>
-                <div className="presentation-stats">
-                  <span>📊 3 Slayt</span>
+                <div className="report-stats">
+                  <span>📄 4 Sayfa</span>
+                  <span>📝 Otomatik biçimlendirildi</span>
                   <span>🎨 Kurumsal Şablon</span>
-                  <span>📝 Otomatik içerik</span>
                 </div>
-                <button className="export-btn">📥 PowerPoint İndir (.pptx)</button>
+                <button className="export-btn">📥 Raporu İndir (.docx)</button>
               </div>
             )}
           </div>
@@ -694,8 +699,8 @@ function ExperiencePage() {
           onClick={() => setActiveDemo('report')}
         >
           <div className="feature-icon">📊</div>
-          <h3>Rapor ve Sunum</h3>
-          <p className="feature-desc">Profesyonel sunum ve rapor taslakları</p>
+          <h3>Rapor Hazırlama</h3>
+          <p className="feature-desc">Profesyonel kurumsal raporlar ve dokümantasyon</p>
         </div>
 
         <div 
