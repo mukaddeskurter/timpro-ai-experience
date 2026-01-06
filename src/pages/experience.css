@@ -2262,94 +2262,145 @@
     color: #b0b0b0;
   }
 
+  /* Modal ekranlar her zaman light mode'da görünsün */
+  .modal-content {
+    background: white !important;
+    color: #333 !important;
+  }
+
   .demo-modal {
-    background: #2a2a2a;
+    background: white !important;
   }
 
   .demo-modal h2,
   .demo-modal h4 {
-    color: #ffffff;
+    color: #0f3d2e !important;
   }
 
   .demo-text-input,
-  .demo-textarea {
-    background: #333;
-    color: #e0e0e0;
-    border-color: #555;
+  .demo-textarea,
+  .demo-select {
+    background: white !important;
+    color: #333 !important;
+    border-color: #ddd !important;
   }
 
   .demo-result {
-    background: #333;
+    background: #f8f9fa !important;
   }
 
   .demo-result p,
   .demo-result li {
-    color: #e0e0e0;
+    color: #666 !important;
+  }
+
+  .demo-result h4 {
+    color: #0f3d2e !important;
   }
 
   .meeting-summary,
   .decision-alternatives,
   .alternative-card {
-    background: #2a2a2a;
-    color: #e0e0e0;
+    background: #f8f9fa !important;
+    color: #333 !important;
   }
 
   .alternative-card h5 {
-    color: #ffffff;
+    color: #0f3d2e !important;
+  }
+
+  .meeting-summary strong {
+    color: #0f3d2e !important;
+  }
+
+  .meeting-summary p,
+  .meeting-summary ul,
+  .meeting-summary li {
+    color: #666 !important;
+  }
+
+  .decision-alternatives strong {
+    color: #0f3d2e !important;
+  }
+
+  .creative-idea {
+    background: #f8f9fa !important;
   }
 
   .creative-idea strong {
-    color: #ffffff;
+    color: #0f3d2e !important;
   }
 
   .creative-idea p {
-    color: #b0b0b0;
+    color: #666 !important;
   }
 
   .excel-preview {
-    background: #2a2a2a;
+    background: white !important;
   }
 
   .excel-table .cell {
-    background: #333;
-    color: #e0e0e0;
-    border-color: #555;
+    background: white !important;
+    color: #333 !important;
+    border-color: #ddd !important;
+  }
+
+  .excel-table .header-cell {
+    background: #f0f0f0 !important;
+    color: #333 !important;
+  }
+
+  .excel-table .total-row {
+    background: #e8f4f0 !important;
+  }
+
+  .excel-table .cell.formula {
+    background: #fff9e6 !important;
+    color: #0f3d2e !important;
   }
 
   .travel-plan-compact,
   .plan-item {
-    background: #2a2a2a;
+    background: #f8f9fa !important;
   }
 
   .plan-details strong {
-    color: #ffffff;
+    color: #0f3d2e !important;
   }
 
   .plan-details p {
-    color: #b0b0b0;
+    color: #666 !important;
   }
 
   .calendar-event {
-    background: #2a2a2a;
+    background: #f8f9fa !important;
   }
 
   .calendar-event p {
-    color: #e0e0e0;
+    color: #666 !important;
+  }
+
+  .calendar-event strong {
+    color: #0f3d2e !important;
   }
 
   .report-preview {
-    background: #2a2a2a;
+    background: white !important;
   }
 
   .report-header h3,
   .report-section h4 {
-    color: #ffffff;
+    color: #001a33 !important;
   }
 
   .report-date,
   .report-section p,
   .report-list li {
-    color: #e0e0e0;
+    color: #444 !important;
+  }
+
+  .report-list li strong {
+    color: #001a33 !important;
   }
 
   .promo-popup {
@@ -2369,33 +2420,50 @@
   }
 
   .tab {
-    background: #333;
-    color: #b0b0b0;
+    background: #f0f0f0 !important;
+    color: #666 !important;
   }
 
   .tab.active {
-    background: #001a33;
-    color: #ffffff;
+    background: #0f3d2e !important;
+    color: #ffffff !important;
   }
 
   .template-select {
-    background: #333;
-    color: #e0e0e0;
-    border-color: #555;
+    background: white !important;
+    color: #333 !important;
+    border-color: #ddd !important;
   }
 
   .action-checkbox span {
-    color: #e0e0e0;
+    color: #333 !important;
   }
 
   .conversion-stats .stat span,
   .next-steps ol li {
-    color: #e0e0e0;
+    color: #666 !important;
+  }
+
+  .conversion-stats .stat strong {
+    color: #4caf50 !important;
+  }
+
+  .next-steps strong {
+    color: #0f3d2e !important;
+  }
+
+  .formula-info {
+    background: white !important;
   }
 
   .formula-info code {
-    background: #1a1a1a;
-    color: #4caf50;
+    background: #f0f0f0 !important;
+    color: #0f3d2e !important;
+  }
+
+  .formula-badge {
+    background: #0f3d2e !important;
+    color: white !important;
   }
 
   .hand-drawn-table,
