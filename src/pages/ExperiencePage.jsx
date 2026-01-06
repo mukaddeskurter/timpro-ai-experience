@@ -597,7 +597,10 @@ function ExperiencePage() {
       </section>
 
       <section className="demo-explanation">
-        <h3>Bu Bir Demo Uygulamasıdır</h3>
+        <h3>
+          <img src="/assets/info-icon.svg" alt="Info" className="info-icon" />
+          Bu Bir Demo Uygulamasıdır
+        </h3>
         <p>
           <strong>Önemli Not:</strong> Bu sayfa, Timpro AI asistanımızın yeteneklerini göstermek için hazırlanmış bir <strong>demo/örnek uygulamadır</strong>. 
           Gerçek ürün çok daha kapsamlıdır ve profesyonel kullanım için tasarlanmıştır.

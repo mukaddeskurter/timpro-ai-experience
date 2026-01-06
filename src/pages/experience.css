@@ -308,9 +308,10 @@
   gap: 10px;
 }
 
-.demo-explanation h3::before {
-  content: "ℹ️";
-  font-size: 28px;
+.demo-explanation h3 .info-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
 }
 
 .demo-explanation p {
