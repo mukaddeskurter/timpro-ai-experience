@@ -602,14 +602,7 @@ function ExperiencePage() {
           <strong>Önemli Not:</strong> Bu sayfa, yapay zeka asistanımızın yeteneklerini göstermek için hazırlanmış bir <strong>demo/örnek uygulamadır</strong>. 
           Gerçek ürün çok daha kapsamlıdır ve aşağıdaki özelliklere sahiptir:
         </p>
-        <ul>
-          <li>📧 <strong>E-posta Yönetimi:</strong> Otomatik yanıtlama, kategorilendirme ve önceliklendirme</li>
-          <li>📊 <strong>Veri Analizi:</strong> Excel, PDF ve diğer dosyalarla çalışma</li>
-          <li>📅 <strong>Ajanda Yönetimi:</strong> Toplantı planlama ve hatırlatmalar</li>
-          <li>✍️ <strong>İçerik Üretimi:</strong> Rapor, sunum ve doküman hazırlama</li>
-          <li>🔄 <strong>İş Akışı Otomasyonu:</strong> Tekrarlayan görevleri otomatikleştirme</li>
-          <li>🌐 <strong>Çoklu Platform Entegrasyonu:</strong> Mevcut sistemlerinizle sorunsuz çalışma</li>
-        </ul>
+  
         <p>
           Bu demo, yukarıdaki özelliklerin sadece <strong>küçük bir kesitini</strong> göstermektedir. 
           Tam işlevli ürün hakkında detaylı bilgi almak ve ihtiyaçlarınıza özel bir demo görmek için bizimle iletişime geçin.
