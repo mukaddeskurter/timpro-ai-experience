@@ -1,14 +1,8 @@
-/* Uygulamayı her zaman light mode'da tut */
-* {
-  color-scheme: light !important;
-}
-
 .experience {
   font-family: system-ui, sans-serif;
   background: #f6f7f8;
   width: 100%;
   overflow-x: hidden;
-  color-scheme: light !important;
 }
 
 .hero {
@@ -253,7 +247,7 @@
   margin-bottom: 40px;
   font-size: 24px;
   font-weight: 600;
-  color: #0f3d2e;
+  color: #0f3d2e !important;
 }
 
 .mail-overlay {
@@ -445,8 +439,8 @@
 }
 
 .cta-button {
-  background: white;
-  color: #0f3d2e;
+  background: white !important;
+  color: #0f3d2e !important;
   padding: 14px 40px;
   font-size: 16px;
   font-weight: 600;
@@ -460,9 +454,9 @@
 }
 
 .cta-button-secondary {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid white !important;
 }
 
 .cta-button:hover {
@@ -495,7 +489,7 @@
 }
 
 .modal-content {
-  background: white;
+  background: white !important;
   border-radius: 20px;
   width: 90%;
   max-width: 650px;
@@ -505,6 +499,7 @@
   position: relative;
   animation: slideUp 0.3s ease;
   box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  color: #333 !important;
 }
 
 @keyframes slideUp {
@@ -522,12 +517,13 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  background: #f0f0f0;
+  background: #f0f0f0 !important;
   border: none;
   width: 36px;
   height: 36px;
   border-radius: 50%;
   font-size: 20px;
+  color: #333 !important;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
@@ -536,7 +532,7 @@
 }
 
 .modal-close:hover {
-  background: #e0e0e0;
+  background: #e0e0e0 !important;
   transform: rotate(90deg);
 }
 
@@ -563,6 +559,8 @@
   margin-bottom: 16px;
   transition: all 0.3s ease;
   box-sizing: border-box;
+  background: white !important;
+  color: #333 !important;
 }
 
 .demo-text-input:focus {
@@ -578,7 +576,7 @@
 }
 
 .demo-result h4 {
-  color: #0f3d2e;
+  color: #0f3d2e !important;
   margin-bottom: 16px;
   font-size: 18px;
 }
@@ -586,7 +584,7 @@
 .demo-result p {
   font-size: 14px;
   line-height: 1.6;
-  color: #666;
+  color: #666 !important;
   margin-bottom: 12px;
 }
 
@@ -599,7 +597,7 @@
   margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.6;
-  color: #666;
+  color: #666 !important;
 }
 
 .demo-meta {
@@ -641,7 +639,7 @@
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
-  color: #333;
+  color: #333 !important;
   font-size: 14px;
 }
 
@@ -652,7 +650,8 @@
   border-radius: 8px;
   font-size: 14px;
   font-family: inherit;
-  background: white;
+  background: white !important;
+  color: #333 !important;
   cursor: pointer;
   transition: all 0.3s ease;
   box-sizing: border-box;
@@ -814,7 +813,7 @@
 .slide-bullets li {
   margin-bottom: 4px;
   font-size: 12px;
-  color: #666;
+  color: #666 !important;
 }
 
 .demo-input,
@@ -829,6 +828,8 @@
   margin-bottom: 16px;
   transition: all 0.3s ease;
   box-sizing: border-box;
+  background: white !important;
+  color: #333 !important;
 }
 
 .demo-input:focus,
@@ -845,8 +846,8 @@
 }
 
 .demo-action-btn {
-  background: linear-gradient(135deg, #0f3d2e 0%, #145a43 100%);
-  color: white;
+  background: linear-gradient(135deg, #0f3d2e 0%, #145a43 100%) !important;
+  color: white !important;
   border: none;
   padding: 14px 28px;
   border-radius: 12px;
@@ -1638,7 +1639,7 @@
 .date-input-group label {
   font-size: 13px;
   font-weight: 600;
-  color: #333;
+  color: #333 !important;
 }
 
 .travel-input-group input,
@@ -1647,6 +1648,8 @@
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 14px;
+  background: white !important;
+  color: #333 !important;
 }
 
 .arrow-icon {
@@ -1790,7 +1793,7 @@
 .input-group label {
   font-size: 13px;
   font-weight: 600;
-  color: #333;
+  color: #333 !important;
   margin-bottom: 6px;
 }
 
@@ -2152,7 +2155,7 @@
 .promo-code-section label {
   display: block;
   font-size: 13px;
-  color: #666;
+  color: #666 !important;
   margin-bottom: 6px;
   font-weight: 500;
 }
