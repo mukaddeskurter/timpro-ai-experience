@@ -598,7 +598,7 @@ function ExperiencePage() {
 
       <section className="demo-explanation">
         <h3>
-          <img src="/assets/info-icon.svg" alt="Info" className="info-icon" />
+          <img src="/src/assets/information_11681700.png" alt="Info" className="info-icon" />
           Bu Bir Demo Uygulamasıdır
         </h3>
         <p>
