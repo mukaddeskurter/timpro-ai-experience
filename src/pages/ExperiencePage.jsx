@@ -599,13 +599,8 @@ function ExperiencePage() {
       <section className="demo-explanation">
         <h3>Bu Bir Demo Uygulamasıdır</h3>
         <p>
-          <strong>Önemli Not:</strong> Bu sayfa, yapay zeka asistanımızın yeteneklerini göstermek için hazırlanmış bir <strong>demo/örnek uygulamadır</strong>. 
-          Gerçek ürün çok daha kapsamlıdır ve aşağıdaki özelliklere sahiptir:
-        </p>
-  
-        <p>
-          Bu demo, yukarıdaki özelliklerin sadece <strong>küçük bir kesitini</strong> göstermektedir. 
-          Tam işlevli ürün hakkında detaylı bilgi almak ve ihtiyaçlarınıza özel bir demo görmek için bizimle iletişime geçin.
+          <strong>Önemli Not:</strong> Bu sayfa, Timpro AI asistanımızın yeteneklerini göstermek için hazırlanmış bir <strong>demo/örnek uygulamadır</strong>. 
+          Gerçek ürün çok daha kapsamlıdır ve profesyonel kullanım için tasarlanmıştır.
         </p>
       </section>
 
