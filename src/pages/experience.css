@@ -2398,6 +2398,24 @@
     color: #4caf50;
   }
 
+  .hand-drawn-table,
+  .hand-drawn-table .table-title,
+  .hand-drawn-table .table-row span {
+    color: #2c3e50 !important;
+  }
+
+  .hand-drawn-table {
+    background: #fffef8 !important;
+  }
+
+  .hand-drawn-table .table-row.header {
+    background: linear-gradient(180deg, #ecf0f1 0%, #d5dbdd 100%) !important;
+  }
+
+  .hand-drawn-table .table-row.total {
+    background: linear-gradient(180deg, #fff9e6 0%, #ffe6b3 100%) !important;
+  }
+
   .report-stats span {
     color: #b0b0b0;
   }
