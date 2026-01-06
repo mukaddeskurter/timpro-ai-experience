@@ -1,5 +1,6 @@
 import "./experience.css";
 import { useState } from "react";
+import infoIcon from "../assets/information_11681700.png";
 
 function ExperiencePage() {
   const [isEdited, setIsEdited] = useState(false);
@@ -598,7 +599,7 @@ function ExperiencePage() {
 
       <section className="demo-explanation">
         <h3>
-          <img src="/src/assets/information_11681700.png" alt="Info" className="info-icon" />
+          <img src={infoIcon} alt="Info" className="info-icon" />
           Bu Bir Demo Uygulamasıdır
         </h3>
         <p>
