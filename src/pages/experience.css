@@ -275,6 +275,71 @@
   }
 }
 
+/* Demo Explanation Section */
+.demo-explanation {
+  background: linear-gradient(135deg, #fff9e6 0%, #fffbf0 100%);
+  border-left: 6px solid #ffd700;
+  padding: 28px 32px;
+  margin: 80px auto;
+  max-width: 900px;
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-explanation::before {
+  content: "⚠️";
+  font-size: 42px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  opacity: 0.15;
+}
+
+.demo-explanation h3 {
+  color: #b8860b;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.demo-explanation h3::before {
+  content: "💡";
+  font-size: 28px;
+}
+
+.demo-explanation p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+}
+
+.demo-explanation p:last-child {
+  margin-bottom: 0;
+}
+
+.demo-explanation strong {
+  color: #b8860b;
+  font-weight: 600;
+}
+
+.demo-explanation ul {
+  margin: 12px 0;
+  padding-left: 24px;
+  color: #555;
+}
+
+.demo-explanation li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
 .features-intro {
   text-align: center;
   padding: 100px 20px 60px;
@@ -1889,6 +1954,30 @@
   .compact-inputs {
     grid-template-columns: 1fr;
   }
+
+  .demo-explanation {
+    padding: 20px 18px;
+    margin: 40px auto;
+    width: 95%;
+  }
+
+  .demo-explanation h3 {
+    font-size: 18px;
+  }
+
+  .demo-explanation h3::before {
+    font-size: 22px;
+  }
+
+  .demo-explanation p {
+    font-size: 14px;
+  }
+
+  .demo-explanation::before {
+    font-size: 32px;
+    top: 15px;
+    right: 15px;
+  }
 }
 
 /* Promo Popup */
@@ -1901,16 +1990,19 @@
   justify-content: center;
   z-index: 10000;
   animation: fadeIn 0.3s ease;
+  cursor: pointer;
 }
 
 .promo-popup {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  border-radius: 24px;
-  padding: 48px;
+  border-radius: 20px;
+  padding: 32px 24px;
   text-align: center;
   position: relative;
-  max-width: 500px;
+  max-width: 380px;
   width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   animation: popupBounce 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -1936,30 +2028,33 @@
 
 .promo-close {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  background: rgba(0, 0, 0, 0.1);
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.15);
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  font-size: 28px;
-  color: #666;
+  font-size: 32px;
+  color: #333;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  z-index: 10;
+  flex-shrink: 0;
 }
 
 .promo-close:hover {
-  background: rgba(0, 0, 0, 0.2);
-  transform: rotate(90deg);
+  background: rgba(0, 0, 0, 0.25);
+  transform: rotate(90deg) scale(1.1);
+  color: #000;
 }
 
 .promo-icon {
-  font-size: 72px;
-  margin-bottom: 16px;
+  font-size: 56px;
+  margin-bottom: 12px;
   animation: bounce 1s infinite;
 }
 
@@ -1973,20 +2068,20 @@
 }
 
 .promo-popup h2 {
-  font-size: 32px;
+  font-size: 26px;
   color: #1a1a1a;
-  margin: 16px 0;
+  margin: 12px 0;
   font-weight: 700;
 }
 
 .promo-discount {
   background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
   color: #0f3d2e;
-  font-size: 56px;
+  font-size: 44px;
   font-weight: 900;
-  padding: 24px;
-  border-radius: 16px;
-  margin: 24px 0 16px 0;
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin: 16px 0 12px 0;
   box-shadow: 0 12px 24px rgba(255, 215, 0, 0.4);
   animation: pulse-glow 2s ease-in-out infinite;
 }
@@ -1995,22 +2090,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin: 16px 0 24px 0;
-  font-size: 28px;
+  gap: 10px;
+  margin: 12px 0 16px 0;
+  font-size: 22px;
   font-weight: 700;
 }
 
 .old-price {
   color: #ff4444;
   text-decoration: line-through;
-  font-size: 24px;
+  font-size: 20px;
   opacity: 0.85;
 }
 
 .arrow {
   color: #0066ff;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 900;
 }
 
@@ -2019,24 +2114,24 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 900;
   text-shadow: 0 2px 10px rgba(0, 208, 132, 0.3);
 }
 
 .promo-popup p {
-  font-size: 18px;
+  font-size: 15px;
   color: #666;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .promo-cta {
   background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%);
   color: white;
   text-decoration: none;
-  padding: 18px 48px;
-  border-radius: 12px;
-  font-size: 18px;
+  padding: 14px 36px;
+  border-radius: 10px;
+  font-size: 16px;
   font-weight: 600;
   display: inline-block;
   transition: all 0.3s ease;
@@ -2049,33 +2144,33 @@
 }
 
 .promo-code-section {
-  margin: 24px 0;
+  margin: 16px 0;
 }
 
 .promo-code-section label {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: 500;
 }
 
 .promo-code-box {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   background: #f8f9fa;
   border: 2px dashed #ffd700;
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 24px;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 16px;
 }
 
 .promo-code-text {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
   color: #0f3d2e;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   flex: 1;
   text-align: center;
 }
@@ -2084,9 +2179,9 @@
   background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
   color: #0f3d2e;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -2314,11 +2409,23 @@
 
 @media (max-width: 768px) {
   .promo-popup {
-    padding: 32px 24px;
+    padding: 32px 20px;
+    width: 95%;
+    max-height: 85vh;
+  }
+  
+  .promo-close {
+    width: 48px;
+    height: 48px;
+    font-size: 36px;
+    top: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.2);
   }
   
   .promo-popup h2 {
-    font-size: 24px;
+    font-size: 22px;
+    margin-top: 8px;
   }
   
   .promo-discount {
@@ -2328,5 +2435,17 @@
   
   .promo-icon {
     font-size: 56px;
+  }
+  
+  .promo-price {
+    font-size: 22px;
+  }
+  
+  .old-price {
+    font-size: 20px;
+  }
+  
+  .new-price {
+    font-size: 32px;
   }
 }
