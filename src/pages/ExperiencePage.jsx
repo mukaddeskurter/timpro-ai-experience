@@ -567,6 +567,30 @@ function ExperiencePage() {
                   <p><strong>⏰ Hatırlatma:</strong> 30 dakika önce</p>
                 </div>
                 <button className="export-btn">📧 Davetiye Gönder</button>
+                
+                <div className="gantt-feature">
+                  <h4>📊 Gantt Şeması Görünümleri</h4>
+                  <p className="gantt-description">Ajandanızı farklı zaman perspektiflerinde görüntüleyin:</p>
+                  <div className="gantt-views">
+                    <div className="gantt-view-option">
+                      <span className="view-icon">📆</span>
+                      <span className="view-name">Günlük</span>
+                    </div>
+                    <div className="gantt-view-option">
+                      <span className="view-icon">📅</span>
+                      <span className="view-name">Haftalık</span>
+                    </div>
+                    <div className="gantt-view-option">
+                      <span className="view-icon">🗓️</span>
+                      <span className="view-name">Aylık</span>
+                    </div>
+                    <div className="gantt-view-option">
+                      <span className="view-icon">📋</span>
+                      <span className="view-name">Yıllık</span>
+                    </div>
+                  </div>
+                  <p className="gantt-note">✨ Tüm projelerinizi ve görevlerinizi görsel bir zaman çizelgesinde takip edin</p>
+                </div>
               </div>
             )}
           </div>
