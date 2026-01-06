@@ -309,7 +309,7 @@
 }
 
 .demo-explanation h3::before {
-  content: "💡";
+  content: "ℹ️";
   font-size: 28px;
 }
 
