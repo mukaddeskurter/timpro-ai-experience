@@ -814,10 +814,11 @@ function ExperiencePage() {
             <div className="promo-icon">🎉</div>
             <h2>Seminere Özel Fırsat!</h2>
             <div className="promo-discount">%20 İndirim</div>
+            <p className="promo-plan-type">Yıllık Plan</p>
             <div className="promo-price">
-              <span className="old-price">YILLIK❌ $625</span>
+              <span className="old-price">$625</span>
               <span className="arrow">→</span>
-              <span className="new-price">YILLIK ✓ $500</span>
+              <span className="new-price">$500</span>
             </div>
             <p className="promo-vat-info">* %20 KDV bu fiyata dahil değildir</p>
             <p>Timpro AI Asistan'ı hemen edinin</p>
