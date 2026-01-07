@@ -814,7 +814,7 @@ function ExperiencePage() {
             <div className="promo-icon">🎉</div>
             <h2>Seminere Özel Fırsat!</h2>
             <div className="promo-discount">%20 İndirim</div>
-            <p className="promo-plan-type">Yıllık Plan</p>
+            <div className="promo-plan-type">⭐ YILLIK PLAN ⭐</div>
             <div className="promo-price">
               <span className="old-price">$625</span>
               <span className="arrow">→</span>
