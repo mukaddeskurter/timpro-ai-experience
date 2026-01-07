@@ -820,7 +820,7 @@ function ExperiencePage() {
               <span className="arrow">→</span>
               <span className="new-price">$500</span>
             </div>
-            <p className="promo-vat-info">* %20 KDV bu fiyata dahil değildir</p>
+            <p className="promo-vat-info">* %20 KDV fiyatlara dahil değildir</p>
             <p>Timpro AI Asistan'ı hemen edinin</p>
             
             <div className="promo-code-section">
