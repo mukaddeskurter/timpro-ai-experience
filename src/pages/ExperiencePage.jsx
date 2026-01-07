@@ -812,7 +812,7 @@ function ExperiencePage() {
           <div className="promo-popup" onClick={(e) => e.stopPropagation()}>
             <button className="promo-close" onClick={() => setIsPromoVisible(false)}>×</button>
             <div className="promo-icon">🎉</div>
-            <h2>Seminere Özel Fırsat!</h2>
+            <h2>Lansmana Özel Fırsat!</h2>
             <div className="promo-discount">%20 İndirim</div>
             <div className="promo-plan-type">⭐ YILLIK PLAN ⭐</div>
             <div className="promo-price">
