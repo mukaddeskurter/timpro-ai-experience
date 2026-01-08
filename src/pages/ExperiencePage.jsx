@@ -648,12 +648,6 @@ function ExperiencePage() {
         </p>
       </section>
 
-      {/* CV Card - Fixed Position */}
-      <div className="cv-fab-button" onClick={() => setShowDetailedCV(true)}>
-        <div className="cv-fab-icon">📋</div>
-        <span className="cv-fab-text">CV'yi Gör</span>
-      </div>
-
       <section className="mail-demo">
         <img src="/timpro-logo.png" alt="Timpro AI" className="section-logo" />
         <h3 className="section-title">
@@ -789,6 +783,15 @@ function ExperiencePage() {
           <div className="feature-icon">📅</div>
           <h3>Akıllı Ajanda</h3>
           <p className="feature-desc">Takvim yönetimi ve hatırlatıcılar</p>
+        </div>
+
+        <div 
+          className="feature-card cv-feature-card"
+          onClick={() => setShowDetailedCV(true)}
+        >
+          <div className="feature-icon">👩‍💼</div>
+          <h3>Asistanın CV'si</h3>
+          <p className="feature-desc">Yetenekler ve deneyim profili</p>
         </div>
       </section>
 
