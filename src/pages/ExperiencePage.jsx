@@ -2,6 +2,7 @@ import "./experience.css";
 import "./cv-styles.css";
 import { useState } from "react";
 import infoIcon from "../assets/information_11681700.png";
+import cvIcon from "../assets/icon.ico";
 
 function ExperiencePage() {
   const [isEdited, setIsEdited] = useState(false);
@@ -875,7 +876,7 @@ function ExperiencePage() {
             📄 PDF Katalog İndir
           </a>
           <button onClick={() => setShowDetailedCV(true)} className="cta-button cta-button-tertiary">
-            <img src="/src/assets/icon.ico" alt="" className="cv-button-icon" />
+            <img src={cvIcon} alt="" className="cv-button-icon" />
             CV İncele
           </button>
         </div>
