@@ -820,7 +820,7 @@ function ExperiencePage() {
                     onClick={() => handleCVPageChange('prev')}
                     disabled={currentCVPage === 0}
                   >
-                    ← Önceki
+                    ‹
                   </button>
                   <span className="page-indicator">Sayfa {currentCVPage + 1} / 2</span>
                   <button 
@@ -828,7 +828,7 @@ function ExperiencePage() {
                     onClick={() => handleCVPageChange('next')}
                     disabled={currentCVPage === 1}
                   >
-                    Sonraki →
+                    ›
                   </button>
                 </div>
 
@@ -874,8 +874,8 @@ function ExperiencePage() {
           <a href="/timpro-katalog.pdf" target="_blank" rel="noopener noreferrer" className="cta-button cta-button-secondary">
             📄 PDF Katalog İndir
           </a>
-          <button onClick={() => setShowDetailedCV(true)} className="cta-button cta-button-tertiary">
-            👩‍💼 Asistanın CV'sini İncele
+          <button onClick={() => setShowDetailedCV(true)} className="cv-icon-button" title="Asistanın CV'sini İncele">
+            <img src="/timpro-logo.png" alt="CV" className="cv-button-icon" />
           </button>
         </div>
       </section>
