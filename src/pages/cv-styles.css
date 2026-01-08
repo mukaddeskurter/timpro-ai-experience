@@ -1,89 +1,63 @@
-/* CV Fixed Card - Pinned to Corner */
+/* CV Floating Action Button */
 
-.cv-fixed-card {
+.cv-fab-button {
   position: fixed;
-  top: 120px;
+  bottom: 30px;
   right: 30px;
-  width: 200px;
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  z-index: 100;
-  transform: rotate(-2deg);
-}
-
-.cv-fixed-card:hover {
-  transform: rotate(0deg) translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.cv-pin {
-  position: absolute;
-  top: -5px;
-  right: 15px;
-  font-size: 2rem;
-  z-index: 10;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-  animation: pinPulse 2s ease-in-out infinite;
-}
-
-@keyframes pinPulse {
-  0%, 100% {
-    transform: rotate(-15deg);
-  }
-  50% {
-    transform: rotate(15deg);
-  }
-}
-
-.cv-image-wrapper {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.cv-compact-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: all 0.3s ease;
-}
-
-.cv-fixed-card:hover .cv-compact-img {
-  transform: scale(1.05);
-}
-
-.cv-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(102, 126, 234, 0.95), transparent);
-  padding: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 24px;
+  border-radius: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.cv-fixed-card:hover .cv-overlay {
-  opacity: 1;
-}
-
-.cv-view-text {
-  color: white;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  animation: fabPulse 3s ease-in-out infinite;
 }
 
-.cv-arrow {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
+@keyframes fabPulse {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 40px rgba(102, 126, 234, 0.6);
+  }
+}
+
+.cv-fab-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 48px rgba(102, 126, 234, 0.6);
+}
+
+.cv-fab-button:active {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.cv-fab-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  animation: iconBounce 2s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.cv-fab-text {
+  font-size: 0.95rem;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
 }
 
 .cv-actions {
@@ -401,34 +375,20 @@
 
 /* Responsive Design */
 
-/* Responsive Design */
-
 @media (max-width: 768px) {
-  .cv-fixed-card {
-    width: 150px;
-    top: auto;
+  .cv-fab-button {
     bottom: 20px;
-    right: 15px;
+    right: 20px;
+    padding: 14px 20px;
+    gap: 10px;
   }
 
-  .cv-pin {
-    font-size: 1.5rem;
-    top: -3px;
-    right: 10px;
+  .cv-fab-icon {
+    font-size: 1.3rem;
   }
 
-  .cv-overlay {
-    opacity: 1;
-    background: linear-gradient(to top, rgba(102, 126, 234, 0.9), transparent);
-    padding: 8px 10px;
-  }
-
-  .cv-view-text {
-    font-size: 0.7rem;
-  }
-
-  .cv-arrow {
-    font-size: 1rem;
+  .cv-fab-text {
+    font-size: 0.85rem;
   }
 
   .cv-modal {

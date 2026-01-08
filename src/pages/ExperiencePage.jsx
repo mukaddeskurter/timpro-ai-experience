@@ -649,19 +649,9 @@ function ExperiencePage() {
       </section>
 
       {/* CV Card - Fixed Position */}
-      <div className="cv-fixed-card" onClick={() => setShowDetailedCV(true)}>
-        <div className="cv-pin">📎</div>
-        <div className="cv-image-wrapper">
-          <img 
-            src="/cv-ozet.jpg" 
-            alt="Asistan CV"
-            className="cv-compact-img"
-          />
-          <div className="cv-overlay">
-            <span className="cv-view-text">CV'yi Görüntüle</span>
-            <span className="cv-arrow">→</span>
-          </div>
-        </div>
+      <div className="cv-fab-button" onClick={() => setShowDetailedCV(true)}>
+        <div className="cv-fab-icon">📋</div>
+        <span className="cv-fab-text">CV'yi Gör</span>
       </div>
 
       <section className="mail-demo">
