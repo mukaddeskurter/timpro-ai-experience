@@ -1,77 +1,89 @@
-/* CV Section Styles */
+/* CV Fixed Card - Pinned to Corner */
 
-.cv-section {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.cv-header {
-  text-align: center;
-  margin-bottom: 40px;
-  color: white;
-}
-
-.cv-header h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.cv-subtitle {
-  font-size: 1.1rem;
-  opacity: 0.9;
-  font-weight: 300;
-}
-
-.cv-container {
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.summary-cv {
-  display: flex;
-  justify-content: center;
-}
-
-.cv-card {
+.cv-fixed-card {
+  position: fixed;
+  top: 120px;
+  right: 30px;
+  width: 200px;
   background: white;
-  border-radius: 20px;
-  padding: 0;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  max-width: 550px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transform: rotate(-2deg);
+}
+
+.cv-fixed-card:hover {
+  transform: rotate(0deg) translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.cv-pin {
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  font-size: 2rem;
+  z-index: 10;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  animation: pinPulse 2s ease-in-out infinite;
+}
+
+@keyframes pinPulse {
+  0%, 100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+.cv-image-wrapper {
   position: relative;
+  width: 100%;
   overflow: hidden;
 }
 
-.cv-top-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-  z-index: 1;
-}
-
-.summary-cv-image {
-  width: 100%;
-  padding: 6px 0 0 0;
-  background: white;
-}
-
-.cv-summary-img {
+.cv-compact-img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.cv-fixed-card:hover .cv-compact-img {
+  transform: scale(1.05);
+}
+
+.cv-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(102, 126, 234, 0.95), transparent);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cv-fixed-card:hover .cv-overlay {
+  opacity: 1;
+}
+
+.cv-view-text {
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.cv-arrow {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .cv-actions {
@@ -389,26 +401,27 @@
 
 /* Responsive Design */
 
+/* Responsive Design */
+
 @media (max-width: 768px) {
-  .cv-section {
-    padding: 60px 15px;
+  .cv-fixed-card {
+    width: 150px;
+    top: 100px;
+    right: 15px;
   }
 
-  .cv-header h2 {
-    font-size: 2rem;
+  .cv-pin {
+    font-size: 1.5rem;
+    top: -3px;
+    right: 10px;
   }
 
-  .cv-card {
-    padding: 0;
+  .cv-view-text {
+    font-size: 0.65rem;
   }
 
-  .summary-cv-image {
-    padding: 6px 0 0 0;
-  }
-
-  .cv-actions {
-    flex-direction: column;
-    padding: 20px;
+  .cv-arrow {
+    font-size: 1rem;
   }
 
   .cv-modal {

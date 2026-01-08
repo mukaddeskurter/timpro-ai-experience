@@ -24,9 +24,9 @@ function ExperiencePage() {
 
   const handleCVPageChange = (direction) => {
     if (direction === 'next' && currentCVPage < 1) {
-      setCurrentCVPage(1);
+      setCurrentCVPage(currentCVPage + 1);
     } else if (direction === 'prev' && currentCVPage > 0) {
-      setCurrentCVPage(0);
+      setCurrentCVPage(currentCVPage - 1);
     }
   };
 
@@ -648,50 +648,21 @@ function ExperiencePage() {
         </p>
       </section>
 
-      <section className="cv-section">
-        <div className="cv-header">
-          <h2>TIMPRO AI Asistan ile Tanışın</h2>
-          <p className="cv-subtitle">Dijital asistanınızın özgeçmişi</p>
-        </div>
-
-        <div className="cv-container">
-          <div className="summary-cv">
-            <div className="cv-card">
-              <div className="cv-top-line"></div>
-              
-              {/* Özet CV Görseli */}
-              <div className="summary-cv-image">
-                <img 
-                  src="/cv-ozet.jpg" 
-                  alt="Timpro AI Asistan - Özet CV"
-                  className="cv-summary-img"
-                />
-              </div>
-
-              {/* Butonlar */}
-              <div className="cv-actions">
-                <button 
-                  className="cv-btn cv-btn-primary"
-                  onClick={() => setShowDetailedCV(true)}
-                >
-                  📄 Detaylı CV'yi Görüntüle
-                </button>
-                <a 
-                  href="/cv-detayli.pdf" 
-                  download="Timpro-AI-Asistan-CV.pdf"
-                  className="cv-btn cv-btn-secondary"
-                >
-                  📥 Detaylı CV'yi İndir
-                </a>
-              </div>
-            </div>
+      {/* CV Card - Fixed Position */}
+      <div className="cv-fixed-card" onClick={() => setShowDetailedCV(true)}>
+        <div className="cv-pin">📎</div>
+        <div className="cv-image-wrapper">
+          <img 
+            src="/cv-ozet.jpg" 
+            alt="Asistan CV"
+            className="cv-compact-img"
+          />
+          <div className="cv-overlay">
+            <span className="cv-view-text">CV'yi Görüntüle</span>
+            <span className="cv-arrow">→</span>
           </div>
         </div>
-
-        <p className="scroll-hint">
-          Aşağıda nasıl çalıştığını görün ↓
-        </p>
-      </section>
+      </div>
 
       <section className="mail-demo">
         <img src="/timpro-logo.png" alt="Timpro AI" className="section-logo" />
@@ -845,8 +816,8 @@ function ExperiencePage() {
           <div className="modal-content cv-modal" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={handleCloseCV}>✕</button>
             <div className="cv-modal-content">
-              <h2>📄 Detaylı Özgeçmiş</h2>
-              <p className="cv-modal-subtitle">Timpro AI Asistan - Kapsamlı Yetenek Profili</p>
+              <h2>📄 Özgeçmiş</h2>
+              <p className="cv-modal-subtitle">Timpro AI Asistan</p>
               
               <div className="cv-pages">
                 <div className="cv-page-navigation">
