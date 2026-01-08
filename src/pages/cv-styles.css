@@ -299,37 +299,35 @@
   padding: 0;
   background: transparent;
   color: #667eea;
-  border: 2px solid #667eea;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 24px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
   font-weight: 300;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .page-nav-btn:hover {
-  background: #667eea;
-  color: white;
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  color: #764ba2;
+  transform: translateX(2px);
+}
+
+.page-nav-btn:first-child:hover {
+  transform: translateX(-2px);
 }
 
 .page-nav-btn:disabled {
-  opacity: 0.3;
+  opacity: 0.2;
   cursor: not-allowed;
-  border-color: #cbd5e0;
   color: #cbd5e0;
 }
 
 .page-nav-btn:disabled:hover {
-  background: transparent;
-  transform: scale(1);
-  box-shadow: none;
+  transform: translateX(0);
 }
 
 .page-indicator {

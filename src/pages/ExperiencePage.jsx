@@ -874,8 +874,9 @@ function ExperiencePage() {
           <a href="/timpro-katalog.pdf" target="_blank" rel="noopener noreferrer" className="cta-button cta-button-secondary">
             📄 PDF Katalog İndir
           </a>
-          <button onClick={() => setShowDetailedCV(true)} className="cv-icon-button" title="Asistanın CV'sini İncele">
-            <img src="/timpro-logo.png" alt="CV" className="cv-button-icon" />
+          <button onClick={() => setShowDetailedCV(true)} className="cta-button cta-button-tertiary">
+            <img src="/src/assets/icon.ico" alt="" className="cv-button-icon" />
+            CV İncele
           </button>
         </div>
       </section>
