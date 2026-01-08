@@ -649,28 +649,12 @@ function ExperiencePage() {
       </section>
 
       <section className="cv-summary-section">
-        <div className="cv-summary-card">
-          <div className="cv-summary-header">
-            <div className="cv-avatar-large">👩‍💼</div>
-            <div className="cv-summary-info">
-              <h3>Timpro AI Asistan</h3>
-              <p className="cv-role">Dijital İş Asistanı</p>
-            </div>
-          </div>
-          <div className="cv-summary-content">
-            <div className="cv-summary-item">
-              <span className="cv-summary-label">Uzmanlık:</span>
-              <span className="cv-summary-value">Kurumsal yazışma, rapor hazırlama, toplantı yönetimi</span>
-            </div>
-            <div className="cv-summary-item">
-              <span className="cv-summary-label">Hizmetler:</span>
-              <span className="cv-summary-value">7 farklı kategoride profesyonel destek</span>
-            </div>
-            <div className="cv-summary-item">
-              <span className="cv-summary-label">Kullanılabilirlik:</span>
-              <span className="cv-summary-value">7/24 aktif, hızlı yanıt süresi</span>
-            </div>
-          </div>
+        <div className="cv-summary-image-wrapper">
+          <img 
+            src="/cv-ozet.jpg" 
+            alt="Timpro AI Asistan CV"
+            className="cv-summary-image"
+          />
         </div>
       </section>
 
