@@ -1,4 +1,5 @@
 import "./experience.css";
+import "./cv-styles.css";
 import { useState } from "react";
 import infoIcon from "../assets/information_11681700.png";
 
@@ -10,6 +11,8 @@ function ExperiencePage() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [isPromoVisible, setIsPromoVisible] = useState(true);
   const [isCopied, setIsCopied] = useState(false);
+  const [showDetailedCV, setShowDetailedCV] = useState(false);
+  const [currentCVPage, setCurrentCVPage] = useState(0);
 
   const promoCode = "TIMPRO20";
 
@@ -17,6 +20,19 @@ function ExperiencePage() {
     navigator.clipboard.writeText(promoCode);
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
+  };
+
+  const handleCVPageChange = (direction) => {
+    if (direction === 'next' && currentCVPage < 1) {
+      setCurrentCVPage(1);
+    } else if (direction === 'prev' && currentCVPage > 0) {
+      setCurrentCVPage(0);
+    }
+  };
+
+  const handleCloseCV = () => {
+    setShowDetailedCV(false);
+    setCurrentCVPage(0);
   };
 
   const handleProcess = (type) => {
@@ -633,18 +649,48 @@ function ExperiencePage() {
       </section>
 
       <section className="cv-section">
-        <div className="cv-card">
-          <p className="scroll-hint">
-            Aşağıda nasıl çalıştığını görün ↓
-          </p>
-
-          <div className="cv-top-line"></div>
-          <h3>Timpro AI Asistan</h3>
-          <p>
-            Kurumsal yazışmalar, planlama ve karar süreçleri için
-            masaüstü dijital asistan.
-          </p>
+        <div className="cv-header">
+          <h2>TIMPRO AI Asistan ile Tanışın</h2>
+          <p className="cv-subtitle">Dijital asistanınızın özgeçmişi</p>
         </div>
+
+        <div className="cv-container">
+          <div className="summary-cv">
+            <div className="cv-card">
+              <div className="cv-top-line"></div>
+              
+              {/* Özet CV Görseli */}
+              <div className="summary-cv-image">
+                <img 
+                  src="/cv-ozet.jpg" 
+                  alt="Timpro AI Asistan - Özet CV"
+                  className="cv-summary-img"
+                />
+              </div>
+
+              {/* Butonlar */}
+              <div className="cv-actions">
+                <button 
+                  className="cv-btn cv-btn-primary"
+                  onClick={() => setShowDetailedCV(true)}
+                >
+                  📄 Detaylı CV'yi Görüntüle
+                </button>
+                <a 
+                  href="/cv-detayli.pdf" 
+                  download="Timpro-AI-Asistan-CV.pdf"
+                  className="cv-btn cv-btn-secondary"
+                >
+                  📥 Detaylı CV'yi İndir
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p className="scroll-hint">
+          Aşağıda nasıl çalıştığını görün ↓
+        </p>
       </section>
 
       <section className="mail-demo">
@@ -790,6 +836,65 @@ function ExperiencePage() {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={() => setActiveDemo(null)}>✕</button>
             {renderDemoContent()}
+          </div>
+        </div>
+      )}
+
+      {showDetailedCV && (
+        <div className="modal-overlay" onClick={handleCloseCV}>
+          <div className="modal-content cv-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={handleCloseCV}>✕</button>
+            <div className="cv-modal-content">
+              <h2>📄 Detaylı Özgeçmiş</h2>
+              <p className="cv-modal-subtitle">Timpro AI Asistan - Kapsamlı Yetenek Profili</p>
+              
+              <div className="cv-pages">
+                <div className="cv-page-navigation">
+                  <button 
+                    className="page-nav-btn" 
+                    onClick={() => handleCVPageChange('prev')}
+                    disabled={currentCVPage === 0}
+                  >
+                    ← Önceki
+                  </button>
+                  <span className="page-indicator">Sayfa {currentCVPage + 1} / 2</span>
+                  <button 
+                    className="page-nav-btn"
+                    onClick={() => handleCVPageChange('next')}
+                    disabled={currentCVPage === 1}
+                  >
+                    Sonraki →
+                  </button>
+                </div>
+
+                <div className="cv-page-viewer">
+                  <div className="cv-page" style={{ display: currentCVPage === 0 ? 'block' : 'none' }}>
+                    <img 
+                      src="/cv-sayfa-1.jpg" 
+                      alt="CV Sayfa 1"
+                      className="cv-page-image"
+                    />
+                  </div>
+                  <div className="cv-page" style={{ display: currentCVPage === 1 ? 'block' : 'none' }}>
+                    <img 
+                      src="/cv-sayfa-2.jpg" 
+                      alt="CV Sayfa 2"
+                      className="cv-page-image"
+                    />
+                  </div>
+                </div>
+
+                <div className="cv-modal-actions">
+                  <a 
+                    href="/cv-detayli.pdf" 
+                    download="Timpro-AI-Asistan-CV.pdf"
+                    className="cv-download-btn"
+                  >
+                    📥 PDF Olarak İndir
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
