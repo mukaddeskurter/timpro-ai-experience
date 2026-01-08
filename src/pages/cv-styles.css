@@ -405,23 +405,24 @@
 
 @media (max-width: 768px) {
   .cv-fixed-card {
-    width: 150px;
-    top: 100px;
+    width: 120px;
+    top: auto;
+    bottom: 20px;
     right: 15px;
   }
 
   .cv-pin {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     top: -3px;
-    right: 10px;
+    right: 8px;
   }
 
   .cv-view-text {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   .cv-arrow {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .cv-modal {
