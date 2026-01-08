@@ -2337,25 +2337,29 @@
   perspective: 1000px;
   padding: 35px 30px 30px 30px;
   background: linear-gradient(135deg, 
-    rgba(255, 255, 255, 0.9) 0%, 
-    rgba(240, 245, 255, 0.85) 50%,
-    rgba(255, 255, 255, 0.9) 100%);
-  border: 2px solid rgba(102, 126, 234, 0.15);
+    rgba(200, 220, 255, 0.75) 0%, 
+    rgba(180, 210, 255, 0.65) 25%,
+    rgba(190, 215, 255, 0.7) 50%,
+    rgba(180, 210, 255, 0.65) 75%,
+    rgba(200, 220, 255, 0.75) 100%);
+  border: 2.5px solid rgba(102, 126, 234, 0.35);
   border-radius: 4px;
   box-shadow: 
     0 2px 8px rgba(0, 0, 0, 0.08),
-    0 8px 32px rgba(102, 126, 234, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8),
-    inset -2px 0 12px rgba(102, 126, 234, 0.05);
+    0 8px 32px rgba(102, 126, 234, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset -2px 0 16px rgba(102, 126, 234, 0.15),
+    inset 2px 0 16px rgba(150, 180, 255, 0.12);
   backdrop-filter: blur(10px);
   transform: translateY(0);
   transition: all 0.4s ease;
 }
 
 .cv-summary-image-wrapper:hover {
-  transform: translateY(-5px) rotateX(2deg);
-  box-shadow: 
-    0 4px 12px rgba(0, 0, 0, 0.12),
+  transform: translateY(-5px) rotateX(35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset -2px 0 20px rgba(102, 126, 234, 0.2),
+    inset 2px 0 20px rgba(150, 180, 255, 0.1
     0 12px 48px rgba(102, 126, 234, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.9),
     inset -2px 0 16px rgba(102, 126, 234, 0.08);
@@ -2369,7 +2373,7 @@
   right: 0;
   height: 25px;
   background: linear-gradient(to bottom, 
-    rgba(102, 126, 234, 0.03) 0%, 
+    rgba(102, 126, 234, 0.12) 0%, 
     transparent 100%);
   border-radius: 4px 4px 0 0;
 }
@@ -2384,9 +2388,10 @@
   height: 4px;
   background: linear-gradient(90deg, 
     transparent 0%, 
-    rgba(102, 126, 234, 0.3) 50%, 
+    rgba(102, 126, 234, 0.5) 50%, 
     transparent 100%);
   border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(102, 126, 234, 0.3);
 }
 
 .cv-summary-image {
